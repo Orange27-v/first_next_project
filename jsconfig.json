@@ -1,7 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./app/*"],
+      "@components/*": ["./app/components/*"],
+      "@lib/*": ["./lib/*"],
+      "@utils/*": ["./app/utils/*"]
+      // ... other aliases
     }
-  }
+  },
+  "include": ["./app/**/*", "./**/*.js"],
+  "exclude": ["node_modules"]
 }
